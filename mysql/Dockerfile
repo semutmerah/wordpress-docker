@@ -1,0 +1,10 @@
+FROM mysql:5.7
+
+ENV MYSQL_ROOT_PASSWORD qwerty123
+ENV MYSQL_DATABASE wordpress_db
+ENV MYSQL_USER wordpress_user
+ENV MYSQL_PASSWORD qwerty54321
+
+VOLUME ["/var/lib/mysql"]
+
+EXPOSE 3306
